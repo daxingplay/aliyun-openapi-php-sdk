@@ -24,8 +24,16 @@ class DeleteAdDefaultCreativeRequest extends \RoaAcsRequest
     function  __construct()
     {
         parent::__construct("OA", "2017-03-08", "DeleteAdDefaultCreative");
-        $this->setUriPattern("/default_creative/[id]/");
+        $this->setUriPattern("/default_creative/[Id]/");
         $this->setMethod("DELETE");
     }
-    
+
+    public function getId() {
+      return $this->getPathParameters()["Id"];
+    }
+
+    public function setId($id) {
+      $this->putPathParameter("Id", $id);
+    }
+
 }

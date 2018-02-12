@@ -27,5 +27,5 @@ class GetStatisticsCreativeAreaRequest extends \RoaAcsRequest
         $this->setUriPattern("/statistics/creative_area/");
         $this->setMethod("GET");
     }
-    
+
 }

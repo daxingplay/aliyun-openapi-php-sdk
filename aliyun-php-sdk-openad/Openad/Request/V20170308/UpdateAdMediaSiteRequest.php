@@ -24,8 +24,16 @@ class UpdateAdMediaSiteRequest extends \RoaAcsRequest
     function  __construct()
     {
         parent::__construct("OA", "2017-03-08", "UpdateAdMediaSite");
-        $this->setUriPattern("/mediaadsiteinfo/[id]");
+        $this->setUriPattern("/mediaadsiteinfo/[Id]");
         $this->setMethod("PUT");
     }
-    
+
+    public function getId() {
+      return $this->getPathParameters()["Id"];
+    }
+
+    public function setId($id) {
+      $this->putPathParameter("Id", $id);
+    }
+
 }

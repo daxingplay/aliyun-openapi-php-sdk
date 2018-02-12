@@ -29,27 +29,27 @@ class GetDspStatementRequest extends \RoaAcsRequest
     }
 
     public function getStatementName() {
-        return $this->getPathParameters()["StatementName"];
+      return $this->getPathParameters()["StatementName"];
     }
 
     public function setStatementName($statementName) {
-        $this->putPathParameter("StatementName", $statementName);
+      $this->putPathParameter("StatementName", $statementName);
     }
 
     public function getStartTime() {
-        return $this->getPathParameters()["StartTime"];
+      return $this->getPathParameters()["StartTime"];
     }
 
     public function setStartTime($startTime) {
-        $this->putPathParameter("StartTime", $startTime);
+      $this->putPathParameter("StartTime", $startTime);
     }
 
     public function getEndTime() {
-        return $this->getPathParameters()["EndTime"];
+      return $this->getPathParameters()["EndTime"];
     }
 
     public function setEndTime($endTime) {
-        $this->putPathParameter("EndTime", $endTime);
+      $this->putPathParameter("EndTime", $endTime);
     }
-    
+
 }

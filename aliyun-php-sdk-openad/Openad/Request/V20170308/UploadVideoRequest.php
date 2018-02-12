@@ -27,5 +27,5 @@ class UploadVideoRequest extends \RoaAcsRequest
         $this->setUriPattern("/upload/video/");
         $this->setMethod("POST");
     }
-    
+
 }

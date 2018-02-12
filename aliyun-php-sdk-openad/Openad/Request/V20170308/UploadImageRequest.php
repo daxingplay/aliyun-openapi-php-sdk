@@ -27,5 +27,5 @@ class UploadImageRequest extends \RoaAcsRequest
         $this->setUriPattern("/upload/image");
         $this->setMethod("POST");
     }
-    
+
 }

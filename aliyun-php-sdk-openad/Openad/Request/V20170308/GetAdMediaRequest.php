@@ -27,5 +27,5 @@ class GetAdMediaRequest extends \RoaAcsRequest
         $this->setUriPattern("/mediainfo/one/query/");
         $this->setMethod("GET");
     }
-    
+
 }

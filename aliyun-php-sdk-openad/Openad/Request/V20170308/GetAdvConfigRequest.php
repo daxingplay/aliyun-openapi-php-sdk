@@ -27,5 +27,5 @@ class GetAdvConfigRequest extends \RoaAcsRequest
         $this->setUriPattern("/advertiser/config/");
         $this->setMethod("GET");
     }
-    
+
 }

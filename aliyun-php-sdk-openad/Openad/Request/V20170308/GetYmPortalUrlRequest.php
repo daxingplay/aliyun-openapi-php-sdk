@@ -27,5 +27,5 @@ class GetYmPortalUrlRequest extends \RoaAcsRequest
         $this->setUriPattern("/otgroup/ym/url/");
         $this->setMethod("GET");
     }
-    
+
 }

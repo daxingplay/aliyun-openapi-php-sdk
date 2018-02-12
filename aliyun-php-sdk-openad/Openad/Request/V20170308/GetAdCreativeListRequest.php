@@ -27,5 +27,5 @@ class GetAdCreativeListRequest extends \RoaAcsRequest
         $this->setUriPattern("/adcreative/adv/query/");
         $this->setMethod("GET");
     }
-
+    
 }

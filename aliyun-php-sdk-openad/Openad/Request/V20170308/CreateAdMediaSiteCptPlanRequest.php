@@ -27,5 +27,5 @@ class CreateAdMediaSiteCptPlanRequest extends \RoaAcsRequest
         $this->setUriPattern("/mediaadsiteinfo/create/schedule/");
         $this->setMethod("POST");
     }
-    
+
 }

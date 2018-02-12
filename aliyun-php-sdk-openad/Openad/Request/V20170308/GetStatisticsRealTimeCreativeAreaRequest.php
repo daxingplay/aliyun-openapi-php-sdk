@@ -27,5 +27,5 @@ class GetStatisticsRealTimeCreativeAreaRequest extends \RoaAcsRequest
         $this->setUriPattern("/statistics/real_time/creative_area/");
         $this->setMethod("GET");
     }
-    
+
 }

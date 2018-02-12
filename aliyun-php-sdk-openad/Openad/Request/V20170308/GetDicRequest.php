@@ -29,11 +29,11 @@ class GetDicRequest extends \RoaAcsRequest
     }
 
     public function getName() {
-        return $this->getPathParameters()["Name"];
+      return $this->getPathParameters()["Name"];
     }
 
     public function setName($name) {
-        $this->putPathParameter("Name", $name);
+      $this->putPathParameter("Name", $name);
     }
-    
+
 }

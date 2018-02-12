@@ -27,5 +27,5 @@ class GetYMOtGroupListRequest extends \RoaAcsRequest
         $this->setUriPattern("/otgroup/ym/query_list/");
         $this->setMethod("GET");
     }
-    
+
 }

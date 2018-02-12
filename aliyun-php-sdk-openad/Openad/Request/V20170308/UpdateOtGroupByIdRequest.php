@@ -24,8 +24,16 @@ class UpdateOtGroupByIdRequest extends \RoaAcsRequest
     function  __construct()
     {
         parent::__construct("OA", "2017-03-08", "UpdateOtGroupById");
-        $this->setUriPattern("/otgroup/[id]/");
+        $this->setUriPattern("/otgroup/[Id]/");
         $this->setMethod("PUT");
     }
-    
+
+    public function getId() {
+      return $this->getPathParameters()["Id"];
+    }
+
+    public function setId($id) {
+      $this->putPathParameter("Id", $id);
+    }
+
 }

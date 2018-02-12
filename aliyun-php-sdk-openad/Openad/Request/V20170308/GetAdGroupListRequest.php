@@ -27,5 +27,5 @@ class GetAdGroupListRequest extends \RoaAcsRequest
         $this->setUriPattern("/adgroup/adv/query/");
         $this->setMethod("GET");
     }
-    
+
 }

@@ -27,5 +27,5 @@ class UploadCommonImageRequest extends \RoaAcsRequest
         $this->setUriPattern("/upload/common/image/");
         $this->setMethod("POST");
     }
-    
+
 }

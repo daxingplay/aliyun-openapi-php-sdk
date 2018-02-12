@@ -27,5 +27,5 @@ class CreateStyleTmplateRequest extends \RoaAcsRequest
         $this->setUriPattern("/style/template/");
         $this->setMethod("POST");
     }
-    
+
 }

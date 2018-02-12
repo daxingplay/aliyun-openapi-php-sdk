@@ -24,8 +24,16 @@ class UpdateAdPlanRequest extends \RoaAcsRequest
     function  __construct()
     {
         parent::__construct("OA", "2017-03-08", "UpdateAdPlan");
-        $this->setUriPattern("/adplan/[id]");
+        $this->setUriPattern("/adplan/[Id]");
         $this->setMethod("PUT");
     }
-    more
+
+    public function getId() {
+      return $this->getPathParameters()["Id"];
+    }
+
+    public function setId($id) {
+      $this->putPathParameter("Id", $id);
+    }
+
 }

@@ -27,5 +27,5 @@ class CreateAdDefaultCreativeRequest extends \RoaAcsRequest
         $this->setUriPattern("/default_creative");
         $this->setMethod("POST");
     }
-    
+
 }

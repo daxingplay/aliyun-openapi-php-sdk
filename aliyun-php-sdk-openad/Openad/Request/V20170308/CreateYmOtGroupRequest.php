@@ -27,5 +27,5 @@ class CreateYmOtGroupRequest extends \RoaAcsRequest
         $this->setUriPattern("/otgroup/ym/createcrowd/");
         $this->setMethod("POST");
     }
-    
+
 }

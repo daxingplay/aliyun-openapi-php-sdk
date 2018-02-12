@@ -27,5 +27,5 @@ class UpdateStyleTmplateRequest extends \RoaAcsRequest
         $this->setUriPattern("/style/template/");
         $this->setMethod("PUT");
     }
-    
+
 }

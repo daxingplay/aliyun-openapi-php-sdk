@@ -24,8 +24,16 @@ class UpdateAdMediaSiteCptPlanRequest extends \RoaAcsRequest
     function  __construct()
     {
         parent::__construct("OA", "2017-03-08", "UpdateAdMediaSiteCptPlan");
-        $this->setUriPattern("/mediaadsiteinfo/schedule/[id]/");
+        $this->setUriPattern("/mediaadsiteinfo/schedule/[Id]/");
         $this->setMethod("PUT");
     }
-    
+
+    public function getId() {
+      return $this->getPathParameters()["Id"];
+    }
+
+    public function setId($id) {
+      $this->putPathParameter("Id", $id);
+    }
+
 }

@@ -24,15 +24,16 @@ class GetAdJsRequest extends \RoaAcsRequest
     function  __construct()
     {
         parent::__construct("OA", "2017-03-08", "GetAdJs");
-        $this->setUriPattern("/mediaadsiteinfo/js/[id]");
+        $this->setUriPattern("/mediaadsiteinfo/js/[Id]");
         $this->setMethod("GET");
     }
-    
+
     public function getId() {
-        return $this->getPathParameters()["id"];
+      return $this->getPathParameters()["Id"];
     }
 
     public function setId($id) {
-        $this->putPathParameter("id", $id);
+      $this->putPathParameter("Id", $id);
     }
+
 }

@@ -27,5 +27,5 @@ class GetDspConfigRequest extends \RoaAcsRequest
         $this->setUriPattern("/base/config/");
         $this->setMethod("GET");
     }
-    
+
 }

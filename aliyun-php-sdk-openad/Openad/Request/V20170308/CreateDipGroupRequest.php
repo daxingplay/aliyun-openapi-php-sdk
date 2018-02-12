@@ -27,5 +27,5 @@ class CreateDipGroupRequest extends \RoaAcsRequest
         $this->setUriPattern("/otgroup/");
         $this->setMethod("POST");
     }
-    
+
 }

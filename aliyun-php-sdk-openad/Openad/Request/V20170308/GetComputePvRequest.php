@@ -27,5 +27,5 @@ class GetComputePvRequest extends \RoaAcsRequest
         $this->setUriPattern("/compute/pv/");
         $this->setMethod("GET");
     }
-    
+
 }

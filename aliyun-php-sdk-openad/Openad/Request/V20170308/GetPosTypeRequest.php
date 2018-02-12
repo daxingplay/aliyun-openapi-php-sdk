@@ -27,5 +27,5 @@ class GetPosTypeRequest extends \RoaAcsRequest
         $this->setUriPattern("/compute/mediasite/type/");
         $this->setMethod("GET");
     }
-    
+
 }

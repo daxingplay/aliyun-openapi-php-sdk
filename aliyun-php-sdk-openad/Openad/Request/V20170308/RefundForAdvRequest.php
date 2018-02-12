@@ -27,5 +27,5 @@ class RefundForAdvRequest extends \RoaAcsRequest
         $this->setUriPattern("/account/refund/");
         $this->setMethod("POST");
     }
-    
+
 }

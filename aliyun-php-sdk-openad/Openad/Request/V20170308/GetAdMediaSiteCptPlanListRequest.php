@@ -24,8 +24,16 @@ class GetAdMediaSiteCptPlanListRequest extends \RoaAcsRequest
     function  __construct()
     {
         parent::__construct("OA", "2017-03-08", "GetAdMediaSiteCptPlanList");
-        $this->setUriPattern("/mediaadsiteinfo/schedule/pid/[pid]/");
+        $this->setUriPattern("/mediaadsiteinfo/schedule/pid/[Pid]/");
         $this->setMethod("GET");
     }
-    
+
+    public function getPid() {
+      return $this->getPathParameters()["Pid"];
+    }
+
+    public function setPid($pid) {
+      $this->putPathParameter("Pid", $pid);
+    }
+
 }

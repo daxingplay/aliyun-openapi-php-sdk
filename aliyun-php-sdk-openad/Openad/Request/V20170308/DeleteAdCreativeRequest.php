@@ -24,15 +24,16 @@ class DeleteAdCreativeRequest extends \RoaAcsRequest
     function  __construct()
     {
         parent::__construct("OA", "2017-03-08", "DeleteAdCreative");
-        $this->setUriPattern("/adcreative/[id]");
+        $this->setUriPattern("/adcreative/[Id]");
         $this->setMethod("DELETE");
     }
-    
+
     public function getId() {
-        return $this->getPathParameters()["id"];
+      return $this->getPathParameters()["Id"];
     }
 
     public function setId($id) {
-        $this->putPathParameter("id", $id);
+      $this->putPathParameter("Id", $id);
     }
+
 }

@@ -27,5 +27,5 @@ class GetAdvertiserQueryRequest extends \RoaAcsRequest
         $this->setUriPattern("/advertiser/query/amount");
         $this->setMethod("GET");
     }
-    
+
 }

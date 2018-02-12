@@ -27,5 +27,5 @@ class GetDspHostRegionRequest extends \RoaAcsRequest
         $this->setUriPattern("/base/host/info/");
         $this->setMethod("GET");
     }
-    
+
 }

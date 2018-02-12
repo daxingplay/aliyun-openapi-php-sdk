@@ -27,5 +27,5 @@ class GetAdvThreeMonthPlanRequest extends \RoaAcsRequest
         $this->setUriPattern("/advstatement/adv_three_month_plan/");
         $this->setMethod("GET");
     }
-    
+
 }

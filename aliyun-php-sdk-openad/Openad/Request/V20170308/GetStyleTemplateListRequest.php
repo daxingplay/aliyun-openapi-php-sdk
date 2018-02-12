@@ -27,5 +27,5 @@ class GetStyleTemplateListRequest extends \RoaAcsRequest
         $this->setUriPattern("/style/template/query/list/");
         $this->setMethod("GET");
     }
-    
+
 }

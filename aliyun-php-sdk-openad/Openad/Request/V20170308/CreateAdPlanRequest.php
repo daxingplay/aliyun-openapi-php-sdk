@@ -27,5 +27,5 @@ class CreateAdPlanRequest extends \RoaAcsRequest
         $this->setUriPattern("/adplan");
         $this->setMethod("POST");
     }
-    
+
 }

@@ -27,5 +27,5 @@ class CreateAdvertiserRequest extends \RoaAcsRequest
         $this->setUriPattern("/advertiser/");
         $this->setMethod("POST");
     }
-    
+
 }

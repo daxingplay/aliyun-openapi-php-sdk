@@ -27,5 +27,5 @@ class GetOtGroupRequest extends \RoaAcsRequest
         $this->setUriPattern("/advertiser/queryot/");
         $this->setMethod("GET");
     }
-    
+
 }

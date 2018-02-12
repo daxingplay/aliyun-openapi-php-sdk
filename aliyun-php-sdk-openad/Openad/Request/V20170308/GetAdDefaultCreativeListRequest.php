@@ -27,5 +27,5 @@ class GetAdDefaultCreativeListRequest extends \RoaAcsRequest
         $this->setUriPattern("/default_creative/dsp/list/");
         $this->setMethod("GET");
     }
-
+    
 }

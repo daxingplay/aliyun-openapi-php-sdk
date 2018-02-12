@@ -29,11 +29,11 @@ class StartAdGroupRequest extends \RoaAcsRequest
     }
 
     public function getId() {
-        return $this->getPathParameters()["Id"];
+      return $this->getPathParameters()["Id"];
     }
 
     public function setId($id) {
-        $this->putPathParameter("Id", $id);
+      $this->putPathParameter("Id", $id);
     }
-    
+
 }

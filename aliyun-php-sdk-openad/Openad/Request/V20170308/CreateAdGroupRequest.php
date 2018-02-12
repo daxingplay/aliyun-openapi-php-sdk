@@ -27,5 +27,5 @@ class CreateAdGroupRequest extends \RoaAcsRequest
         $this->setUriPattern("/adgroup");
         $this->setMethod("POST");
     }
-    
+
 }

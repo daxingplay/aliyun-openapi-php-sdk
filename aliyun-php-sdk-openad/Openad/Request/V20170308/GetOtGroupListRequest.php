@@ -27,5 +27,5 @@ class GetOtGroupListRequest extends \RoaAcsRequest
         $this->setUriPattern("/otgroup/list/query/");
         $this->setMethod("GET");
     }
-    
+
 }

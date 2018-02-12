@@ -27,5 +27,5 @@ class GetAdMediaCountRequest extends \RoaAcsRequest
         $this->setUriPattern("/mediainfo/dsp/count/");
         $this->setMethod("GET");
     }
-    
+
 }

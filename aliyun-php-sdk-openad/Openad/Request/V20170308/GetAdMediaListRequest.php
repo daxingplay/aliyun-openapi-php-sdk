@@ -27,5 +27,5 @@ class GetAdMediaListRequest extends \RoaAcsRequest
         $this->setUriPattern("/mediainfo/dsp/query/");
         $this->setMethod("GET");
     }
-    
+
 }

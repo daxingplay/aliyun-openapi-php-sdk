@@ -24,16 +24,16 @@ class GetAdPlanRequest extends \RoaAcsRequest
     function  __construct()
     {
         parent::__construct("OA", "2017-03-08", "GetAdPlan");
-        $this->setUriPattern("/adplan/query/[id]");
+        $this->setUriPattern("/adplan/query/[Id]");
         $this->setMethod("GET");
     }
-    
+
     public function getId() {
-        return $this->getPathParameters()["id"];
+      return $this->getPathParameters()["Id"];
     }
 
     public function setId($id) {
-        $this->putPathParameter("id", $id);
+      $this->putPathParameter("Id", $id);
     }
 
 }

@@ -27,5 +27,5 @@ class GetStatisticsCreativeMediaSiteRequest extends \RoaAcsRequest
         $this->setUriPattern("/statistics/creative_mediasite/");
         $this->setMethod("GET");
     }
-    
+
 }

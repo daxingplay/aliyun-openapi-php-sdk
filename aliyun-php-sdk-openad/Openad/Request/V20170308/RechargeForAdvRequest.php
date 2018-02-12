@@ -27,5 +27,5 @@ class RechargeForAdvRequest extends \RoaAcsRequest
         $this->setUriPattern("/account/recharge/");
         $this->setMethod("POST");
     }
-    
+
 }

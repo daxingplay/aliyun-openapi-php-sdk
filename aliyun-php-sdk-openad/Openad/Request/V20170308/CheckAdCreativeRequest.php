@@ -27,5 +27,5 @@ class CheckAdCreativeRequest extends \RoaAcsRequest
         $this->setUriPattern("/adcreative/dsp/check/");
         $this->setMethod("POST");
     }
-    
+
 }

@@ -27,5 +27,5 @@ class GetStatisticsRealTimeCreativeMediaSiteRequest extends \RoaAcsRequest
         $this->setUriPattern("/statistics/real_time/creative_mediasite/");
         $this->setMethod("GET");
     }
-    
+
 }

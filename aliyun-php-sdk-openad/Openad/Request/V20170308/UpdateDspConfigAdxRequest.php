@@ -27,5 +27,5 @@ class UpdateDspConfigAdxRequest extends \RoaAcsRequest
         $this->setUriPattern("/base/config/adx/");
         $this->setMethod("PUT");
     }
-    
+
 }

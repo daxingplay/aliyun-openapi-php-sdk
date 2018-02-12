@@ -27,5 +27,5 @@ class GetAdChectCreativeCountRequest extends \RoaAcsRequest
         $this->setUriPattern("/adcreative/dsp/need_check_count/");
         $this->setMethod("GET");
     }
-    
+
 }

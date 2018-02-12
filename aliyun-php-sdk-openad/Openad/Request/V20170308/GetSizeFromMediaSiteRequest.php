@@ -27,5 +27,5 @@ class GetSizeFromMediaSiteRequest extends \RoaAcsRequest
         $this->setUriPattern("/compute/mediasite/size/");
         $this->setMethod("GET");
     }
-    
+
 }

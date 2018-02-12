@@ -27,5 +27,5 @@ class DeleteYmOtGroupRequest extends \RoaAcsRequest
         $this->setUriPattern("/otgroup/ym/deletecrowd/");
         $this->setMethod("DELETE");
     }
-    
+
 }

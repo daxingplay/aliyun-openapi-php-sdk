@@ -27,5 +27,5 @@ class CreateAdMediaRequest extends \RoaAcsRequest
         $this->setUriPattern("/mediainfo");
         $this->setMethod("POST");
     }
-    
+
 }
