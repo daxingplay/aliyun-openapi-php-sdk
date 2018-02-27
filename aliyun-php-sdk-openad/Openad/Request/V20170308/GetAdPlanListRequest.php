@@ -28,4 +28,7 @@ class GetAdPlanListRequest extends \RoaAcsRequest
         $this->setMethod("GET");
     }
 
+    public function setAdvId($advId) {
+        $this->addHeader('org-adid', $advId);
+    }
 }

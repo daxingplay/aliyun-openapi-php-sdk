@@ -28,4 +28,8 @@ class CreateAdPlanRequest extends \RoaAcsRequest
         $this->setMethod("POST");
     }
 
+    public function setAdvId($advId) {
+        $this->addHeader('org-adid', $advId);
+    }
+
 }
