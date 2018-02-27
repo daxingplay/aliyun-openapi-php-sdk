@@ -28,4 +28,12 @@ class UploadVideoRequest extends \RoaAcsRequest
         $this->setMethod("POST");
     }
 
+    public function setDspId($dspId) {
+        $this->addHeader('ORG-DSPID', $dspId);
+    }
+
+    public function setFileExt($ext) {
+        $this->addHeader('FILE-EXT-NAME', $ext);
+    }
+
 }

@@ -27,5 +27,9 @@ class GetAdCreativeListRequest extends \RoaAcsRequest
         $this->setUriPattern("/adcreative/adv/query/");
         $this->setMethod("GET");
     }
+
+    public function setAdvId($advId) {
+        $this->addHeader('ORG-ADID', $advId);
+    }
     
 }

@@ -28,4 +28,8 @@ class CreateAdGroupRequest extends \RoaAcsRequest
         $this->setMethod("POST");
     }
 
+    public function setAdvId($advId) {
+        $this->addHeader('ORG-ADID', $advId);
+    }
+
 }
