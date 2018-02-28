@@ -27,5 +27,36 @@ class GetAdDefaultCreativeListRequest extends \RoaAcsRequest
         $this->setUriPattern("/default_creative/dsp/list/");
         $this->setMethod("GET");
     }
+
+    private $queryStr;
+    private $page;
+    private $size;
+
+    public function getQueryStr() {
+        return $this->queryStr;
+    }
+
+    public function setQueryStr($queryStr) {
+        $this->queryStr = $queryStr;
+        $this->queryParameters["query_str"]=$queryStr;
+    }
+
+    public function getPage() {
+        return $this->page;
+    }
+
+    public function setPage($page) {
+        $this->page = $page;
+        $this->queryParameters["page"]=$page;
+    }
+
+    public function getSize() {
+        return $this->size;
+    }
+
+    public function setSize($size) {
+        $this->size = $size;
+        $this->queryParameters["size"]=$size;
+    }
     
 }

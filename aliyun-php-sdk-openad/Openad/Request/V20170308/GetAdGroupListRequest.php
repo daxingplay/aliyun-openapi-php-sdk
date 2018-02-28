@@ -32,4 +32,55 @@ class GetAdGroupListRequest extends \RoaAcsRequest
         $this->addHeader('ORG-ADID', $advId);
     }
 
+    private $adPlanId;
+    private $adType;
+    private $queryStr;
+    private $page;
+    private $size;
+
+    public function getAdPlanId() {
+        return $this->adPlanId;
+    }
+
+    public function setAdPlanId($adPlanId) {
+        $this->adPlanId = $adPlanId;
+        $this->queryParameters["ad_plan_id"]=$adPlanId;
+    }
+
+    public function getAdType() {
+        return $this->adType;
+    }
+
+    public function setAdType($adType) {
+        $this->adType = $adType;
+        $this->queryParameters["ad_type"]=$adType;
+    }
+
+    public function getQueryStr() {
+        return $this->queryStr;
+    }
+
+    public function setQueryStr($queryStr) {
+        $this->queryStr = $queryStr;
+        $this->queryParameters["query_str"]=$queryStr;
+    }
+
+    public function getPage() {
+        return $this->page;
+    }
+
+    public function setPage($page) {
+        $this->page = $page;
+        $this->queryParameters["page"]=$page;
+    }
+
+    public function getSize() {
+        return $this->size;
+    }
+
+    public function setSize($size) {
+        $this->size = $size;
+        $this->queryParameters["size"]=$size;
+    }
+
 }

@@ -52,4 +52,35 @@ class GetAdvStatementRequest extends \RoaAcsRequest
       $this->putPathParameter("EndTime", $endTime);
     }
 
+    private $page;
+    private $size;
+    private $type;
+
+    public function getPage() {
+        return $this->page;
+    }
+
+    public function setPage($page) {
+        $this->page = $page;
+        $this->queryParameters["page"]=$page;
+    }
+
+    public function getSize() {
+        return $this->size;
+    }
+
+    public function setSize($size) {
+        $this->size = $size;
+        $this->queryParameters["size"]=$size;
+    }
+
+    public function getType() {
+        return $this->type;
+    }
+
+    public function setType($type) {
+        $this->type = $type;
+        $this->queryParameters["type"]=$type;
+    }
+
 }

@@ -36,4 +36,55 @@ class GetAdMediaSiteListRequest extends \RoaAcsRequest
       $this->putPathParameter("Id", $id);
     }
 
+    private $isCpt;
+    private $pids;
+    private $mediaTypeId;
+    private $page;
+    private $size;
+
+    public function getIsCpt() {
+        return $this->isCpt;
+    }
+
+    public function setIsCpt($isCpt) {
+        $this->isCpt = $isCpt;
+        $this->queryParameters["is_cpt"]=$isCpt;
+    }
+
+    public function getPids() {
+        return $this->pids;
+    }
+
+    public function setPids($pids) {
+        $this->pids = $pids;
+        $this->queryParameters["pids"]=$pids;
+    }
+
+    public function getMediaTypeId() {
+        return $this->mediaTypeId;
+    }
+
+    public function setMediaTypeId($mediaTypeId) {
+        $this->mediaTypeId = $mediaTypeId;
+        $this->queryParameters["media_type_id"]=$mediaTypeId;
+    }
+
+    public function getPage() {
+        return $this->page;
+    }
+
+    public function setPage($page) {
+        $this->page = $page;
+        $this->queryParameters["page"]=$page;
+    }
+
+    public function getSize() {
+        return $this->size;
+    }
+
+    public function setSize($size) {
+        $this->size = $size;
+        $this->queryParameters["size"]=$size;
+    }
+
 }

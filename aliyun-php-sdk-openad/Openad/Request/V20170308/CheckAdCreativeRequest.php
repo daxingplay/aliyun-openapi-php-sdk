@@ -28,4 +28,35 @@ class CheckAdCreativeRequest extends \RoaAcsRequest
         $this->setMethod("POST");
     }
 
+    private $ids;
+    private $pass;
+    private $reason;
+
+    public function getIds() {
+        return $this->ids;
+    }
+
+    public function setIds($ids) {
+        $this->ids = $ids;
+        $this->queryParameters["ids"]=$ids;
+    }
+
+    public function getPass() {
+        return $this->pass;
+    }
+
+    public function setPass($pass) {
+        $this->pass = $pass;
+        $this->queryParameters["pass"]=$pass;
+    }
+
+    public function getReason() {
+        return $this->reason;
+    }
+
+    public function setReason($reason) {
+        $this->reason = $reason;
+        $this->queryParameters["reason"]=$reason;
+    }
+
 }

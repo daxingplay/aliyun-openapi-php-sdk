@@ -36,4 +36,15 @@ class UploadImageRequest extends \RoaAcsRequest
         $this->addHeader('FILE-EXT-NAME', $ext);
     }
 
+    private $sizes;
+
+    public function getSizes() {
+        return $this->sizes;
+    }
+
+    public function setSizes($sizes) {
+        $this->sizes = $sizes;
+        $this->queryParameters["sizes"]=$sizes;
+    }
+
 }

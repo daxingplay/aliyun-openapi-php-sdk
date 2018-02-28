@@ -31,4 +31,45 @@ class GetAdPlanListRequest extends \RoaAcsRequest
     public function setAdvId($advId) {
         $this->addHeader('ORG-ADID', $advId);
     }
+
+    private $page;
+    private $size;
+    private $queryStr;
+    private $adType;
+
+    public function getPage() {
+        return $this->page;
+    }
+
+    public function setPage($page) {
+        $this->page = $page;
+        $this->queryParameters["page"]=$page;
+    }
+
+    public function getSize() {
+        return $this->size;
+    }
+
+    public function setSize($size) {
+        $this->size = $size;
+        $this->queryParameters["size"]=$size;
+    }
+
+    public function getQueryStr() {
+        return $this->queryStr;
+    }
+
+    public function setQueryStr($queryStr) {
+        $this->queryStr = $queryStr;
+        $this->queryParameters["query_str"]=$queryStr;
+    }
+
+    public function getAdType() {
+        return $this->adType;
+    }
+
+    public function setAdType($adType) {
+        $this->adType = $adType;
+        $this->queryParameters["ad_type"]=$adType;
+    }
 }

@@ -32,4 +32,95 @@ class CreateAdPlanRequest extends \RoaAcsRequest
         $this->addHeader('ORG-ADID', $advId);
     }
 
+    private $adPlanName;
+    private $adType;
+    private $quotaStatus;
+    private $dailyMaxQuota;
+    private $startTime;
+    private $endTime;
+    private $deliveryTime;
+    private $adPlanStatus;
+    private $isCpt;
+
+    public function getAdPlanName() {
+        return $this->adPlanName;
+    }
+
+    public function setAdPlanName($adPlanName) {
+        $this->adPlanName = $adPlanName;
+        $this->queryParameters["ad_plan_name"]=$adPlanName;
+    }
+
+    public function getAdType() {
+        return $this->adType;
+    }
+
+    public function setAdType($adType) {
+        $this->adType = $adType;
+        $this->queryParameters["ad_type"]=$adType;
+    }
+
+    public function getQuotaStatus() {
+        return $this->quotaStatus;
+    }
+
+    public function setQuotaStatus($quotaStatus) {
+        $this->quotaStatus = $quotaStatus;
+        $this->queryParameters["quota_status"]=$quotaStatus;
+    }
+
+    public function getDailyMaxQuota() {
+        return $this->dailyMaxQuota;
+    }
+
+    public function setDailyMaxQuota($dailyMaxQuota) {
+        $this->dailyMaxQuota = $dailyMaxQuota;
+        $this->queryParameters["daily_max_quota"]=$dailyMaxQuota;
+    }
+
+    public function getStartTime() {
+        return $this->startTime;
+    }
+
+    public function setStartTime($startTime) {
+        $this->startTime = $startTime;
+        $this->queryParameters["start_time"]=$startTime;
+    }
+
+    public function getEndTime() {
+        return $this->endTime;
+    }
+
+    public function setEndTime($endTime) {
+        $this->endTime = $endTime;
+        $this->queryParameters["end_time"]=$endTime;
+    }
+
+    public function getDeliveryTime() {
+        return $this->deliveryTime;
+    }
+
+    public function setDeliveryTime($deliveryTime) {
+        $this->deliveryTime = $deliveryTime;
+        $this->queryParameters["delivery_time"]=$deliveryTime;
+    }
+
+    public function getAdPlanStatus() {
+        return $this->adPlanStatus;
+    }
+
+    public function setAdPlanStatus($adPlanStatus) {
+        $this->adPlanStatus = $adPlanStatus;
+        $this->queryParameters["ad_plan_status"]=$adPlanStatus;
+    }
+
+    public function getIsCpt() {
+        return $this->isCpt;
+    }
+
+    public function setIsCpt($isCpt) {
+        $this->isCpt = $isCpt;
+        $this->queryParameters["is_cpt"]=$isCpt;
+    }
+
 }

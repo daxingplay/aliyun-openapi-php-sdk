@@ -28,4 +28,75 @@ class CreateAdMediaSiteRequest extends \RoaAcsRequest
         $this->setMethod("POST");
     }
 
+    private $mediaId;
+    private $name;
+    private $adSiteSize;
+    private $adSiteTypeId;
+    private $siteCateId;
+    private $isCpt;
+    private $imgPath;
+
+    public function getMediaId() {
+        return $this->mediaId;
+    }
+
+    public function setMediaId($mediaId) {
+        $this->mediaId = $mediaId;
+        $this->queryParameters["media_id"]=$mediaId;
+    }
+
+    public function getName() {
+        return $this->name;
+    }
+
+    public function setName($name) {
+        $this->name = $name;
+        $this->queryParameters["name"]=$name;
+    }
+
+    public function getAdSiteSize() {
+        return $this->adSiteSize;
+    }
+
+    public function setAdSiteSize($adSiteSize) {
+        $this->adSiteSize = $adSiteSize;
+        $this->queryParameters["ad_site_size"]=$adSiteSize;
+    }
+
+    public function getAdSiteTypeId() {
+        return $this->adSiteTypeId;
+    }
+
+    public function setAdSiteTypeId($adSiteTypeId) {
+        $this->adSiteTypeId = $adSiteTypeId;
+        $this->queryParameters["ad_site_type_id"]=$adSiteTypeId;
+    }
+
+    public function getSiteCateId() {
+        return $this->siteCateId;
+    }
+
+    public function setSiteCateId($siteCateId) {
+        $this->siteCateId = $siteCateId;
+        $this->queryParameters["site_cate_id"]=$siteCateId;
+    }
+
+    public function getIsCpt() {
+        return $this->isCpt;
+    }
+
+    public function setIsCpt($isCpt) {
+        $this->isCpt = $isCpt;
+        $this->queryParameters["is_cpt"]=$isCpt;
+    }
+
+    public function getImgPath() {
+        return $this->imgPath;
+    }
+
+    public function setImgPath($imgPath) {
+        $this->imgPath = $imgPath;
+        $this->queryParameters["img_path"]=$imgPath;
+    }
+
 }

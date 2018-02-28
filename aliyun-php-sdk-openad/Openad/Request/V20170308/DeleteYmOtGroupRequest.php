@@ -28,4 +28,25 @@ class DeleteYmOtGroupRequest extends \RoaAcsRequest
         $this->setMethod("DELETE");
     }
 
+    private $crowdId;
+    private $avId;
+
+    public function getCrowdId() {
+        return $this->crowdId;
+    }
+
+    public function setCrowdId($crowdId) {
+        $this->crowdId = $crowdId;
+        $this->queryParameters["crowd_id"]=$crowdId;
+    }
+
+    public function getAvId() {
+        return $this->avId;
+    }
+
+    public function setAvId($avId) {
+        $this->avId = $avId;
+        $this->queryParameters["av_id"]=$avId;
+    }
+
 }

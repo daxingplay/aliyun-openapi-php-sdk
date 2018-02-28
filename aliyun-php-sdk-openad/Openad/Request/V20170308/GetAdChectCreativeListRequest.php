@@ -27,5 +27,36 @@ class GetAdChectCreativeListRequest extends \RoaAcsRequest
         $this->setUriPattern("/adcreative/check/list/");
         $this->setMethod("GET");
     }
+
+    private $keyword;
+    private $page;
+    private $size;
+
+    public function getKeyword() {
+        return $this->keyword;
+    }
+
+    public function setKeyword($keyword) {
+        $this->keyword = $keyword;
+        $this->queryParameters["keyword"]=$keyword;
+    }
+
+    public function getPage() {
+        return $this->page;
+    }
+
+    public function setPage($page) {
+        $this->page = $page;
+        $this->queryParameters["page"]=$page;
+    }
+
+    public function getSize() {
+        return $this->size;
+    }
+
+    public function setSize($size) {
+        $this->size = $size;
+        $this->queryParameters["size"]=$size;
+    }
     
 }

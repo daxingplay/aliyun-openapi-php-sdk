@@ -28,4 +28,25 @@ class RechargeForAdvRequest extends \RoaAcsRequest
         $this->setMethod("POST");
     }
 
+    private $advId;
+    private $money;
+
+    public function getAdvId() {
+        return $this->advId;
+    }
+
+    public function setAdvId($advId) {
+        $this->advId = $advId;
+        $this->queryParameters["adv_id"]=$advId;
+    }
+
+    public function getMoney() {
+        return $this->money;
+    }
+
+    public function setMoney($money) {
+        $this->money = $money;
+        $this->queryParameters["money"]=$money;
+    }
+
 }

@@ -28,4 +28,65 @@ class GetAdMediaListRequest extends \RoaAcsRequest
         $this->setMethod("GET");
     }
 
+    private $page;
+    private $size;
+    private $queryStr;
+    private $mediaTypeId;
+    private $dict;
+    private $siteCateId;
+
+    public function getPage() {
+        return $this->page;
+    }
+
+    public function setPage($page) {
+        $this->page = $page;
+        $this->queryParameters["page"]=$page;
+    }
+
+    public function getSize() {
+        return $this->size;
+    }
+
+    public function setSize($size) {
+        $this->size = $size;
+        $this->queryParameters["size"]=$size;
+    }
+
+    public function getQueryStr() {
+        return $this->queryStr;
+    }
+
+    public function setQueryStr($queryStr) {
+        $this->queryStr = $queryStr;
+        $this->queryParameters["query_str"]=$queryStr;
+    }
+
+    public function getMediaTypeId() {
+        return $this->mediaTypeId;
+    }
+
+    public function setMediaTypeId($mediaTypeId) {
+        $this->mediaTypeId = $mediaTypeId;
+        $this->queryParameters["media_type_id"]=$mediaTypeId;
+    }
+
+    public function getDict() {
+        return $this->dict;
+    }
+
+    public function setDict($dict) {
+        $this->dict = $dict;
+        $this->queryParameters["dict"]=$dict;
+    }
+
+    public function getSiteCateId() {
+        return $this->siteCateId;
+    }
+
+    public function setSiteCateId($siteCateId) {
+        $this->siteCateId = $siteCateId;
+        $this->queryParameters["site_cate_id"]=$siteCateId;
+    }
+
 }

@@ -28,4 +28,35 @@ class CreateYmOtGroupRequest extends \RoaAcsRequest
         $this->setMethod("POST");
     }
 
+    private $tags;
+    private $crowdName;
+    private $avId;
+
+    public function getTags() {
+        return $this->tags;
+    }
+
+    public function setTags($tags) {
+        $this->tags = $tags;
+        $this->queryParameters["tags"]=$tags;
+    }
+
+    public function getCrowdName() {
+        return $this->crowdName;
+    }
+
+    public function setCrowdName($crowdName) {
+        $this->crowdName = $crowdName;
+        $this->queryParameters["crowd_name"]=$crowdName;
+    }
+
+    public function getAvId() {
+        return $this->avId;
+    }
+
+    public function setAvId($avId) {
+        $this->avId = $avId;
+        $this->queryParameters["av_id"]=$avId;
+    }
+
 }

@@ -28,4 +28,15 @@ class GetYMOtGroupListRequest extends \RoaAcsRequest
         $this->setMethod("GET");
     }
 
+    private $avId;
+
+    public function getAvId() {
+        return $this->avId;
+    }
+
+    public function setAvId($avId) {
+        $this->avId = $avId;
+        $this->queryParameters["av_id"]=$avId;
+    }
+
 }
